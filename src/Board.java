@@ -36,7 +36,7 @@ public class Board {
     public char getOpponent() { return (currentPlayer == 'X') ? 'O' : 'X'; }
     public char getCell(int r, int c) { return grid[r][c]; }
 
-    // actions(board) -> iterable of legal moves
+
     public List<int[]> getLegalMoves() {
         List<int[]> moves = new ArrayList<>();
         for (int i = 0; i < m; i++) {
@@ -49,7 +49,7 @@ public class Board {
         return moves;
     }
 
-    // result(board, action)
+
     public Board makeMove(int row, int col) {
         if (grid[row][col] != ' ') return null;
         Board newBoard = new Board(this);
@@ -76,7 +76,7 @@ public class Board {
                 if (i + k <= m && j - k + 1 >= 0 && checkLine(i, j, 1, -1, current)) return current;
             }
         }
-        return ' '; // No winner yet
+        return ' ';
     }
 
     private boolean checkLine(int r, int c, int dr, int dc, char player) {
@@ -94,7 +94,7 @@ public class Board {
                 if (grid[i][j] == ' ') return false;
             }
         }
-        return true; // Draw
+        return true;
     }
 
     @Override
