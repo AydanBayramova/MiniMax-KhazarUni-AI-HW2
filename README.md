@@ -1,7 +1,7 @@
 # Generalized Tic-Tac-Toe AI Agent
 
 ## Student Information
-* **Name:** [Write Your Name Here]
+* **Name:** Aydan Bayramova
 * **Course:** Artificial Intelligence
 * **Assignment:** Homework Assignment 2
 
