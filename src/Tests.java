@@ -14,7 +14,7 @@ public class Tests {
         System.out.print("Test 1: Win Conditions... ");
         Board b = new Board(3, 3);
 
-        // Row check
+
         b = b.makeMove(0, 0);
         b = b.makeMove(1, 0);
         b = b.makeMove(0, 1);
@@ -22,7 +22,7 @@ public class Tests {
         b = b.makeMove(0, 2);
         assert b.checkWinner() == 'X' : "Failed Row Win";
 
-        // Diagonal check
+
         b = new Board(3, 3);
         b = b.makeMove(0, 0);
         b = b.makeMove(0, 1);
